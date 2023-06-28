@@ -1,0 +1,132 @@
+.contact{
+    background-color: var(--primary_color);
+    color: var(--text_color_inverse);
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 25px;
+
+    display: grid;
+    gap: 25px;
+}
+
+.contact p,
+.contact h2,
+.contact ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contact_title{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact_details,
+.contact_form{
+    display: grid;
+    gap: 20px;
+}
+
+.contact_details_group,
+.contact_form_group{
+    display: grid;
+    gap: 3px;
+}
+
+.contact_label{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.contact_form input,
+.contact form textarea{
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.contact_form textarea{
+    height: auto;
+    resize: vertical;
+}
+
+.contact_form_submit{
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--text_color);
+    border-radius: 7px;
+    color: var(--text_color_inverse);
+    border: 1px solid var(--theme_color);
+
+    cursor: pointer;
+}
+
+.contact_form_submit:hover{
+    box-shadow: 0 0 14px var(--secondary_color);
+}
+
+.social_list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.social_list img{
+    height: 25px;
+}
+
+@media (min-width: 900px){
+    .contact{
+        font-size: 20px;
+        padding: 70px;
+
+        max-width: 980px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    
+    .contact_title{
+        font-size: 35px;
+        text-align: left;
+    }
+    
+    .social_list{
+        justify-content: flex-start;
+    }
+    
+    .social_list img{
+        height: 35px;
+    }
+
+    .contact_title{
+        grid-area: title;
+    }
+
+    .contact_details{
+        grid-area: details;
+    }
+
+    .contact_form{
+        grid-area: form;
+    }
+
+    .social{
+        grid-area: social;
+    }
+
+    .contact{
+        display: grid;
+        grid: 
+        "title   form" auto
+        "details form" 1fr
+        "social  form" auto /
+        1fr      1fr;
+        
+    }
+}

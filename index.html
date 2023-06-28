@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title> 
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/experiences.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer src="js/app.js"></script>
+
+</head>
+
+<body>
+
+    <header class="top_header">
+        <nav class="top_nav">
+            <a href="#" class="logo">
+                <img height="50"
+                width="50" 
+                src="images/cara.jpg" alt="programador"/>
+                <div>
+                    Iván C.Gonzalez <br/>
+                    { code }
+                </div>
+            </a>
+            <button class="open_menu" aria-label="Abrir menú">
+                <img src="images/menu2.svg" alt="abrir menú">
+            </button>
+            
+            <ul class="menu">
+                <button class="close_menu" aria-label="Cerrar menu">
+                    <img src="images/x_cerrar.svg" alt="Cerrar Menú">
+                </button>
+                <li><a href="#profile" class="selected">Perfil</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="horizontal_padding vertical_padding">
+        <section class="profile" id="profile">
+            <div class="profile_info">
+                <h1 class="profile_title">Hola soy <br/> Iván González</h1>
+                <p class="profile_details">Soy un apadsionado de la arquitectura y el desarrollo de diseño web, sin importar la edad cumpli el sueño de lograr una ingenieria y poco a poco he ido generando proyectos personales para demostrar mi trabajo y la clase de profesional que soy y puedo llegar a ser.</p>
+
+                <a class="profile_btn" href="images/CV-IvanGC.pdf" download="">descargar CV</a>
+            </div>
+            <spam class="profile_img_section">
+                <img class="profile_img" src="images/imagen_curric.png" alt="programador">
+                <div class="profile_img_line"></div>
+            </spam>
+        </section>
+    </div>
+
+    <section class="experiences" id="experience">
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,124.49 C245.15,186.50 281.82,44.78 500.22,130.40 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill:#124f88;"></path></svg></div>
+
+        <div class="experiences_body">
+            <h2 class="experience_title"> Experiencia</h2>
+            <div class="experiences_grid">
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="experience">
+                    <div class="experience_date">2022 -2021</div>
+                    <div class="experience_company">Optim Co.</div>
+                    <div class="experience_position">Senior Designer</div>
+                    <div class="experience_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolore ad totam eaque veritatis debitis assumenda aliquam rem esse illum!</div>
+                </div>
+
+                <div class="experience experience_left">
+                    <div class="experience_date">2021 -2022</div>
+                    <div class="experience_company">MacDonalds Co.</div>
+                    <div class="experience_position">Senior Designer</div>
+                    <div class="experience_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolore ad totam eaque veritatis debitis assumenda aliquam rem esse illum!</div>
+                </div>
+                
+                <div class="line"></div>
+                <div class="empty"></div>
+
+                <div class="empty"></div>
+                <div class="line"></div>
+
+                <div class="experience">
+                    <div class="experience_date">2022 -2023</div>
+                    <div class="experience_company">Putin Co.</div>
+                    <div class="experience_position">Senior Designer</div>
+                    <div class="experience_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolore ad totam eaque veritatis debitis assumenda aliquam rem esse illum!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wave wave_bottom" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.90,124.49 C245.15,186.50 281.82,44.78 500.22,130.40 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill:#124f88;"></path></svg></div>
+    </section>
+
+
+    <div class="horizontal_padding vertical_padding">
+        <section class="skills" id="skills">
+            <h2 class="skills_title">Habilidades</h2>
+            <ul class="skills_list">
+                <li class="skills_skill">CSS</li>
+                <li class="skills_skill">HTML</li>
+                <li class="skills_skill">JavaScript</li>
+                <li class="skills_skill">Programas de Diseño</li>
+            </ul>
+
+        </section>
+    </div>
+
+    <div class="horizontal_padding vertical_padding">
+        <section class="contact" id="contact">
+            <h2 class="contact_title">Contacto</h2>
+            <div class="contact_details">
+                <div class="contact_details_group">
+                    <p class="contact_label">Direcccion</p>
+                    <p class="contact_text">Santiago, Chile</p>
+                </div>
+                <div class="contact_details_group">
+                    <p class="contact_label">Email</p>
+                    <p class="contact_text">ivancristiangc@gmail.com</p>
+                </div>
+                <div class="contact_details_group">
+                    <p class="contact_text">Deje su mensaje y con gusto le responderé.</p>
+                </div>
+            </div>
+            
+                <form class="contact_form">
+                    <div class="contact_form_group">
+                        <label for="name">Nombre</label>
+                        <input required type="text" name="name" id="name" />
+                    </div>
+                    <div class="contact_form_group">
+                        <label for="email">Email</label>
+                        <input required type="email" name="email" id="email" />
+                    </div>
+                    <div class="contact_form_group">
+                        <label for="message">Mensaje</label>
+                        <textarea required name="message" id="message" cols="30" rows="6"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact_form_submit">Enviar</button>
+                </form>
+                <nav class="social">
+                    <ul class="social_list">
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="images/facebook.svg" alt="twitter profile">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="images/facebook.svg" alt="twitter profile">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="images/facebook.svg" alt="twitter profile">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            
+        </section>
+    </div>
+    
+</body>
+
+</html>
